@@ -1,0 +1,66 @@
+rush02
+
+h
+dict_list
+사전의 내용을 관리 
+검색 / 추가 / 변경 / 제거
+change_dict_value
+add_dict_list
+find_dict_in_list
+free_dict_list
+
+dict_parser
+공백 끝까지 길이 찾기
+라인 끝까지 길이 찾기
+공백 넘기기, 
+공백 + 콤마 넘기기 
+
+parse_line : 문장 분석 -> result는 동적 2차원 배열 
+공백 넘기고 result [0]에 스페이스 끝나는 지점 포인터 저장
+공백 뒤에 ,가 오면 argc인자 2개 -> 한번더 포인터 저장 
+result = 0 or 1
+
+dict
+동적할당과 구조체로 새로운 사전 만들기 
+사전 할당 해제 
+
+file_to_hash
+빈 줄인지 확인
+key_and_value 라는 2차원 배열 : parse_line  result 저장 
+new_dict : key_and_value[0] : key , key_and_value[1] : value 
+free_strs(key_and_value, 2); : 2차원 배열 동적할당 해제 ? 
+
+read_file_and_make_hash()
+hash 생성, lines 읽어오고, 
+
+*find_util.h
+find_in_dict : tmp에 찾는 값 저장 있으면 프린트까지함 없으면 -1 리턴
+tmp->key 와 to_find(arr)가 같으면 출력되게 
+
+split_by_digit : idx를 3으로 나뉠때마다 len ++ -> 단위 1000
+put_by_digit : unit으로 3/2/1/0 나눠서 strncpy출력 
+arr / str 
+print_digit : 숫자 출력 arr = 1000~ 저장 
+num_max_len : 가장 긴 key 값 저장 
+
+find.c
+
+ft_main.c
+유효하지 않을때 (valid함수) 
+
+ft_string.c
+
+ft.string2.c
+
+hash.c
+hash init
+hash index get
+put dict 
+해쉬는 결국 각 key의 인덱스를 저장하는 배열 
+
+input_validataion.c
+
+print_entry.c
+
+read_file.c
+
