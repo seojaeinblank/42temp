@@ -1,0 +1,29 @@
+Assignment name  : inter
+Expected files   : inter.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that takes two strings and displays, without doubles, the
+characters that appear in both strings, in the order they appear in the first
+one.
+
+The display will be followed by a \n.
+
+If the number of arguments is not 2, the program displays \n.
+
+Examples:
+
+$>./inter "padinton" "paqefwtdjetyiytjneytjoeyjnejeyj" | cat -e
+padinto$
+$>./inter ddf6vewg64f gtwthgdwthdwfteewhrtag6h4ffdhsd | cat -e
+df6ewg4$
+$>./inter "rien" "cette phrase ne cache rien" | cat -e
+rien$
+$>./inter | cat -e
+$
+
+// 양쪽 문자열에 등장할 경우 첫번째 문장의 순서대로 출력하라
+// 중복된거는 뒤에꺼 빼버림 
+// 아스키코드[256]을 활용 하는게 훨씬 편하네 
+
+
